@@ -1,14 +1,11 @@
 name: udagram-ci
 on: 
   push: 
-    branches: [main]
+    branches: [ main ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v2
-      - name: Set environment variable
-
-
+      - name: Checkout
+        uses: actions/checkout@v
