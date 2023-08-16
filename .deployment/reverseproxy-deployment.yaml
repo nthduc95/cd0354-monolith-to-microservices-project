@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: reverseproxy
 spec:
   selector:
     matchLabels:
-      app: nginx
+      app: reverseproxy
   replicas: 2
   template:
     metadata:
       labels:
-        app: nginx
+        app: reverseproxy
     spec:
       containers:
-      - name: nginx
-        image: nthduc95/reverseproxy:reverseproxy-v1
+      - name: reverseproxy
+        image: nthduc95/reverseproxy:reverseproxy-v2
         imagePullPolicy: Always
         resources:
           requests:
