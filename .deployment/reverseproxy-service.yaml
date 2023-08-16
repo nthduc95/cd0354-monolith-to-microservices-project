@@ -9,5 +9,5 @@ spec:
     protocol: TCP
     name: http
   selector:
-    app: nginx-deployment
+    app: nginx-svc
   type: ClusterIP

@@ -15,7 +15,7 @@ spec:
         app: backend-feed-deployment
     spec:
       containers:
-      - name: backend-user-deployment
+      - name: backend-feed-deployment
         image: nthduc95/udagram-api-feed:udagram-api-feed
         imagePullPolicy: Always
         resources:
