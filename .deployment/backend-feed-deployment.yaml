@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-feed-deployment
+  labels:
+    app: backend-feed-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend-feed-deployment
+  template:
+    metadata:
+      labels:
+        app: backend-feed-deployment
+    spec:
+      containers:
+      - name: backend-user-deployment
+        image: nthduc95/udagram-api-feed:udagram-api-feed
+        imagePullPolicy: Always
+        resources:
+          requests:
+            memory: "1024Mi"
+            cpu: "250m"
+          limits:
+            memory: "2048Mi"
+            cpu: "500m"
+        envFrom:
+          - secretRef:
+              name: env-secret
+          - configMapRef:
+              name: env-configmap
+        ports:
+          - containerPort: 8080 
