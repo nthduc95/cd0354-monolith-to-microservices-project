@@ -28,8 +28,8 @@ jobs:
 
       - name: Push Docker images
         run: |
-          docker tag reverseproxy ${{ secrets.DOCKERHUB_USERNAME }}/reverseproxy:reverseproxy-v1
-          docker push ${{ secrets.DOCKERHUB_USERNAME }}/reverseproxy:reverseproxy-v1
+          docker tag reverseproxy ${{ secrets.DOCKERHUB_USERNAME }}/reverseproxy:reverseproxy-v2
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/reverseproxy:reverseproxy-v2
           docker tag udagram-api-user ${{ secrets.DOCKERHUB_USERNAME }}/udagram-api-user:udagram-api-user
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/udagram-api-user:udagram-api-user
           docker tag udagram-api-feed ${{ secrets.DOCKERHUB_USERNAME }}/udagram-api-feed:udagram-api-feed
