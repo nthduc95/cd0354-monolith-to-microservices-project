@@ -14,7 +14,13 @@ My udagram URL: http://a70fbd9f5d7f9458a94c7194a3f464f4-459877293.us-east-1.elb.
 * GitHub repository’s settings showing your Travis webhook (can be found in Settings - Webhook)
   => Because I had problems with my travis's account, I used Github action instead of travis.
   https://github.com/nthduc95/cd0354-monolith-to-microservices-project/blob/main/.github/workflows/build.yml
-  
+    
+  About the similarities between Travis CI and GitHub Actions, which are two popular tools for continuous integration and continuous delivery (CI/CD). CI/CD is a process that automates the building, testing, and deploying of software applications. Here are some of the main similarities between Travis CI and GitHub Actions:
+  - Both tools use YAML (YAML Ain't Markup Language) format for their configuration files.
+  - Both tools support a wide range of programming languages, such as Python, Ruby, Java, Node.js, and more.
+  - Both tools allow you to run your workflows on different operating systems, such as Linux, Windows, and macOS.
+
+
 * Travis CI showing a successful build and deploy job
   Here is my CI Git action uccessful build and deploy job:
   https://github.com/nthduc95/cd0354-monolith-to-microservices-project/actions
