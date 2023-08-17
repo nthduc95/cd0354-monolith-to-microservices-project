@@ -46,6 +46,10 @@ kubectl describe hpa
 ```
 <img width="1512" alt="Screenshot 2023-08-16 at 21 33 53" src="https://github.com/nthduc95/cd0354-monolith-to-microservices-project/assets/119287881/8b52708c-b640-4b87-973a-8e70f5e23760">
 
+Update metrics:
+<img width="1512" alt="Screenshot 2023-08-17 at 09 12 33" src="https://github.com/nthduc95/cd0354-monolith-to-microservices-project/assets/119287881/98024545-bac5-49ac-9f36-dcbf4e121fd4">
+
+
 * To verify that you have set up logging with a backend application
 ```bash
 kubectl logs {pod_name}
